@@ -7,3 +7,5 @@ wandb==0.16.5
 cython<3
 ipykernel==6.29.4
 ipywidgets==8.1.2
+wandb==0.16.5
+moviepy==1.0.3

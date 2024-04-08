@@ -12,6 +12,28 @@ Get dependencies:
 
 The project is tested with Mujoco in gymnasium. Please have a look at [this](https://gymnasium.farama.org/environments/mujoco/) and follow the instructions on installing the Mujoco engine.
 
+## Mujoco Environments
+---
+For the rendering part, you will want to install the following backends.
+> `conda activate ppo`
+
+> `conda install -c conda-forge glew`
+
+> `conda install -c conda-forge mesalib`
+
+> `conda install -c anaconda mesa-libgl-cos6-x86_64`
+
+> `conda install -c menpo glfw3`
+
+> `conda env config vars set MUJOCO_GL=egl PYOPENGL_PLATFORM=egl`
+
+> `conda deactivate && conda activate ppo`
+
+source: https://pytorch.org/rl/reference/generated/knowledge_base/MUJOCO_INSTALLATION.html
+
+
+
+
 ## Benchmarks
 The performance of this project is evaluated against the PPO implementation of [**Stable-Baseline3**](https://github.com/DLR-RM/stable-baselines3) in Mujoco environments. The following shows the results in 5 environments: `Ant-v4`, `HalfCheetah-v4`, `Hopper-v4`, `Humanoid-v4`, `Walker2d-v4`
 ### Ant-v4
